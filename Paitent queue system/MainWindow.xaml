@@ -1,0 +1,21 @@
+﻿<Window x:Class="Paitent_queue_system.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Doctor Patient Token System"
+        Height="550" Width="650"
+        WindowStartupLocation="CenterScreen"
+        Background="#F0F4F8">
+
+    <StackPanel Margin="30">
+        <TextBlock Text="DOCTOR PATIENT TOKEN SYSTEM" FontSize="23" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,25"></TextBlock>
+        <TextBlock Text="Enter Patient Name:" FontSize="16" ></TextBlock>
+        <TextBox x:Name="txtPatientName" Height="35" FontSize="16" Margin="0,8,0,10"></TextBox>
+        <Button Content="Create Token" Height="40" Background="#2196F3" Foreground="White" Name="createtoken" Click="createtoken_Click"></Button>
+        <Button Content="Doctor Arrived" Height="40" Margin="0,15,0,10" Background="#4CAF50" Foreground="White" Name="doctor_arrived" Click="doctor_arrived_Click"></Button>
+        <TextBlock x:Name="txtCurrentPatient" Text="Doctor Not Arrived" FontSize="20"  HorizontalAlignment="Center" Foreground="DarkBlue"></TextBlock>
+        <Button Content="Next Patient" Height="40" Margin="0,20,0,10" Background="#FF9800" Foreground="White" Click="next_paient_Click" Name="next_paient"></Button>
+        <TextBlock x:Name="txtQueueCount" Text="Waiting Patients: 0" FontSize="17" HorizontalAlignment="Center" Margin="0,15,0,0">
+            </TextBlock>
+
+    </StackPanel>
+</Window>
